@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  width: 1440px;
+  text-align: start;
+  color: white;
+  background-color: hsl(226, 43%, 10%);
+  align-items: center;
+}
+
+/* ----------------------
+!!!!!!! Text Styling !!!!!!!!
+----------------------------*/
+h1,
+h2,
+h3,
+p {
+  padding-left: 40px;
+}
+h3 {
+  margin-bottom: 30px;
+}
+h2,
+p {
+  margin-bottom: 15px;
+}
+/*--------------------------
+!!!!!!!!! Colum !!!!!!!!!!!!
+---------------------------*/
+
+.hero {
+  grid-area: 1 / 1 / 3 / 2;
+  border: solid 1px black;
+  border-radius: 15px;
+  background-color: hsl(264, 64%, 52%);
+}
+
+#report {
+  background-color: hsl(246, 80%, 60%);
+  border: solid 1px black;
+  border-radius: 15px;
+}
+
+#img-work,
+#work {
+  grid-area: 1 / 2 / 2 / 3;
+  border: solid 1px black;
+  border-radius: 15px;
+  background-color: hsl(15, 100%, 70%);
+}
+
+#img-play,
+#play {
+  grid-area: 1 / 3 / 2 / 4;
+  border: solid 1px black;
+  border-radius: 15px;
+  background-color: hsl(195, 74%, 62%);
+}
+#img-study,
+#study {
+  grid-area: 1 / 4 / 2 / 5;
+  border: solid 1px black;
+  border-radius: 15px;
+  background-color: hsl(348, 100%, 68%);
+}
+#img-exercise,
+#exercise {
+  grid-area: 2 / 2 / 3 / 3;
+  border: solid 1px black;
+  border-radius: 15px;
+  background-color: hsl(145, 58%, 55%);
+}
+#img-social,
+#social {
+  grid-area: 2 / 3 / 3 / 4;
+  border: solid 1px black;
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+}
+#img-self-care,
+#self-care {
+  grid-area: 2 / 4 / 3 / 5;
+  border: solid 1px black;
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+}
+/*--------------------------
+!!!!!!!!!!! Colum !!!!!!!!!!
+---------------------------*/
+
+#work,
+#play,
+#study,
+#exercise,
+#social,
+#self-care {
+  background-color: hsl(235, 46%, 20%);
+}
