@@ -1,109 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="index.css">
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <div class="hero">
-  <section id="Report">
-    <img src="./images/image-jeremy.png" alt="jeremy image">
-  <p>Report for</p>
-  <H1>Jeremy Robson</H1>
-  </section>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div id="report">
+        <img
+          id="jeremy"
+          src="./images/image-jeremy.png"
+          alt="jeremy image"
+          class="icon-box"
+        />
+        <p id="hero-p">Report for</p>
+        <h1>Jeremy Robson</h1>
+      </div>
 
-  <section>
-  <P>Daily</P>
-  <P>Weekly</P>
-  <P>Monthly</P>
-  </section>
-  </div>
+      <p>Daily</p>
+      <p id="select">Weekly</p>
+      <p>Monthly</p>
+    </div>
 
-  <section id="img-work">
-  <img src="./images/icon-work.svg" alt="work icon">
-  <div id="work">
-  <h3>Work</h3>
-  <!-- 5hrs  daily -->
-  <!-- Previous - 7hrs  daily -->
-  <H2>32hrs</H2> <!-- weekly -->
-  <p>Previous - 36hrs</p> <!-- weekly -->
-  <!-- <H2>103hrs</H2>  monthly -->
-  <!-- Previous - 128hrs  monthly -->
-  </div>
-  </section>
+    <section id="img-work" class="colum">
+      <img src="./images/icon-work.svg" alt="work icon" class="icon-box" />
+      <div id="work">
+        <h3>Work</h3>
+        <!-- 5hrs  daily -->
+        <!-- Previous - 7hrs  daily -->
+        <h2>32hrs</h2>
+        <!-- weekly -->
+        <p>Previous - 36hrs</p>
+        <!-- weekly -->
+        <!-- <H2>103hrs</H2>  monthly -->
+        <!-- Previous - 128hrs  monthly -->
+      </div>
+    </section>
 
-  <section id="img-play">
-    <img src="./images/icon-play.svg" alt="play icon"/>
-    <div id="play">
-  <h3>Play</h3>
-  <!-- 1hr  daily -->
-  <!-- Previous - 2hrs  daily -->
-  <h2>10hrs</h2> <!-- weekly -->
-  <p>Previous - 8hrs</p> <!-- weekly -->
-  <!-- 23hrs  monthly -->
-  <!-- Previous - 29hrs monthly -->
-  </div>
-  </section>
+    <section id="img-play" class="colum">
+      <img src="./images/icon-play.svg" alt="play icon" class="icon-box" />
+      <div id="play">
+        <h3>Play</h3>
+        <!-- 1hr  daily -->
+        <!-- Previous - 2hrs  daily -->
+        <h2>10hrs</h2>
+        <!-- weekly -->
+        <p>Previous - 8hrs</p>
+        <!-- weekly -->
+        <!-- 23hrs  monthly -->
+        <!-- Previous - 29hrs monthly -->
+      </div>
+    </section>
 
-  <section id="img-study">
-    <img src="./images/icon-study.svg" alt="study icon">
-    <div id="study">
-  <h3>Study</h3>
-  <!-- 0hrs  daily -->
-  <!-- Previous - 1hr  daily -->
-  <H2>4hrs</H2> <!-- weekly -->
-  <p>Previous - 7hrs</p> <!-- weekly -->
-  <!-- 13hrs  monthly -->
-  <!-- Previous - 19hrs  monthly -->
-  </div>
-  </section>
+    <section id="img-study" class="colum">
+      <img src="./images/icon-study.svg" alt="study icon" class="icon-box" />
+      <div id="study">
+        <h3>Study</h3>
+        <!-- 0hrs  daily -->
+        <!-- Previous - 1hr  daily -->
+        <h2>4hrs</h2>
+        <!-- weekly -->
+        <p>Previous - 7hrs</p>
+        <!-- weekly -->
+        <!-- 13hrs  monthly -->
+        <!-- Previous - 19hrs  monthly -->
+      </div>
+    </section>
 
-  <section id="img-exercise">
-    <img src="./images/icon-exercise.svg" alt="exercise icon">
-    <div id="exercise"></div>
-  <h3>Exercise</h>
-  <!-- 1hr  daily -->
-  <!-- Previous - 1hr  daily -->
-  <h2>4hrs</h2> <!-- weekly -->
-  <p>Previous - 5hrs</p> <!-- weekly -->
-  <!-- 11hrs  monthly -->
-  <!-- Previous - 18hrs  monthly -->
-  </section>
+    <section id="img-exercise" class="colum">
+      <img
+        src="./images/icon-exercise.svg"
+        alt="exercise icon"
+        class="icon-box"
+      />
+      <div id="exercise">
+        <h3>Exercise</h3>
+        <!-- 1hr  daily -->
+        <!-- Previous - 1hr  daily -->
+        <h2>4hrs</h2>
+        <!-- weekly -->
+        <p>Previous - 5hrs</p>
+        <!-- weekly -->
+        <!-- 11hrs  monthly -->
+        <!-- Previous - 18hrs  monthly -->
+      </div>
+    </section>
 
-  <section id="img-social">
-    <img src="./images/icon-social.svg" alt="social icon">
-    <div id="sosial">
-  <h3>Social</h3>
-  <!-- 1hr  daily -->
-  <!-- Previous - 3hrs  daily -->
-  <h2>5hrs</h2> <!-- weekly -->
-  <p>Previous - 10hrs</p> <!-- weekly -->
-  <!-- 21hrs  monthly -->
-  <!-- Previous - 23hrs  monthly -->
-  </div>
-  </section>
+    <section id="img-social" class="colum">
+      <img src="./images/icon-social.svg" alt="social icon" class="icon-box" />
+      <div id="social">
+        <h3>Social</h3>
+        <!-- 1hr  daily -->
+        <!-- Previous - 3hrs  daily -->
+        <h2>5hrs</h2>
+        <!-- weekly -->
+        <p>Previous - 10hrs</p>
+        <!-- weekly -->
+        <!-- 21hrs  monthly -->
+        <!-- Previous - 23hrs  monthly -->
+      </div>
+    </section>
 
-  <section id="img-self-care">
-    <img src="./images/icon-self-care.svg" alt="self care icon">
-    <div id="self-care"></div>
-  <h3>Self Care</h3>
-  <!-- 0hrs  daily -->
-  <!-- Previous - 1hr  daily -->
-  <h2>2hrs</h2> <!-- weekly -->
-  <p>Previous - 2hrs</p> <!-- weekly -->
-  <!-- 7hrs  monthly -->
-  <!-- Previous - 11hrs  monthly -->
-  </section>
-  
-</body>
+    <section id="img-self-care" class="colum">
+      <img
+        src="./images/icon-self-care.svg"
+        alt="self care icon"
+        class="icon-box"
+      />
+      <div id="self-care">
+        <h3>Self Care</h3>
+        <!-- 0hrs  daily -->
+        <!-- Previous - 1hr  daily -->
+        <h2>2hrs</h2>
+        <!-- weekly -->
+        <p>Previous - 2hrs</p>
+        <!-- weekly -->
+        <!-- 7hrs  monthly -->
+        <!-- Previous - 11hrs  monthly -->
+      </div>
+    </section>
+  </body>
 </html>

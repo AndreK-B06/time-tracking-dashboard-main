@@ -15,6 +15,8 @@ body {
   color: white;
   background-color: hsl(226, 43%, 10%);
   align-items: center;
+  font-size: 18px;
+  margin: auto;
 }
 
 /* ----------------------
@@ -26,82 +28,131 @@ h3,
 p {
   padding-left: 40px;
 }
+h2 {
+  font-size: 50px;
+}
 h3 {
+  padding-top: 30px;
   margin-bottom: 30px;
 }
 h2,
 p {
   margin-bottom: 15px;
 }
-/*--------------------------
+p {
+  color: hsl(235, 45%, 61%);
+}
+#hero-p {
+  color: hsl(236, 100%, 87%);
+}
+#select {
+  font-size: 20px;
+  color: hsl(236, 100%, 87%);
+}
+/* --------------------------
 !!!!!!!!! Colum !!!!!!!!!!!!
----------------------------*/
+--------------------------- */
 
 .hero {
   grid-area: 1 / 1 / 3 / 2;
   border: solid 1px black;
   border-radius: 15px;
-  background-color: hsl(264, 64%, 52%);
+  background-color: hsl(235, 46%, 20%);
 }
 
 #report {
-  background-color: hsl(246, 80%, 60%);
-  border: solid 1px black;
+  padding: 20px 0px 190px 5px;
+  margin-bottom: 30px;
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 15px;
+}
+#img-work,
+#work,
+#img-play,
+#play,
+#img-study,
+#study,
+#img-exercise,
+#exercise,
+#img-social,
+#social,
+#img-self-care,
+#self-care {
   border-radius: 15px;
 }
 
 #img-work,
 #work {
   grid-area: 1 / 2 / 2 / 3;
-  border: solid 1px black;
-  border-radius: 15px;
   background-color: hsl(15, 100%, 70%);
 }
 
 #img-play,
 #play {
   grid-area: 1 / 3 / 2 / 4;
-  border: solid 1px black;
-  border-radius: 15px;
   background-color: hsl(195, 74%, 62%);
 }
 #img-study,
 #study {
   grid-area: 1 / 4 / 2 / 5;
-  border: solid 1px black;
-  border-radius: 15px;
   background-color: hsl(348, 100%, 68%);
 }
 #img-exercise,
 #exercise {
   grid-area: 2 / 2 / 3 / 3;
-  border: solid 1px black;
-  border-radius: 15px;
   background-color: hsl(145, 58%, 55%);
 }
 #img-social,
 #social {
   grid-area: 2 / 3 / 3 / 4;
-  border: solid 1px black;
-  border-radius: 15px;
-  background-color: hsl(235, 46%, 20%);
+  background-color: hsl(264, 64%, 52%);
 }
 #img-self-care,
 #self-care {
   grid-area: 2 / 4 / 3 / 5;
-  border: solid 1px black;
-  border-radius: 15px;
-  background-color: hsl(235, 46%, 20%);
+  background-color: hsl(43, 84%, 65%);
 }
-/*--------------------------
-!!!!!!!!!!! Colum !!!!!!!!!!
----------------------------*/
+
+.icon-box {
+  display: block;
+  margin-left: auto;
+}
+/* --------------------------
+!!!!!!!!! Fixes !!!!!!!!!!
+--------------------------- */
+
+.colum {
+  height: 50%;
+}
 
 #work,
 #play,
 #study,
-#exercise,
-#social,
 #self-care {
   background-color: hsl(235, 46%, 20%);
+  position: relative;
+  bottom: 20px;
+}
+
+#exercise,
+#social {
+  background-color: hsl(235, 46%, 20%);
+  position: relative;
+  bottom: 10px;
+}
+
+#social {
+  position: relative;
+  bottom: 55px;
+}
+/* --------------------------
+!!!!!!!!!!! Image !!!!!!!!!!
+--------------------------- */
+#jeremy {
+  width: 90px;
+  border: solid 3px;
+  border-radius: 47px;
+  margin-bottom: 20px;
+  display: block;
+  margin-left: 20px;
 }
