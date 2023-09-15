@@ -6,17 +6,13 @@
 
 body {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 20px;
-  grid-row-gap: 20px;
   width: 1440px;
   text-align: start;
   color: white;
   background-color: hsl(226, 43%, 10%);
-  align-items: center;
+  margin: 50px;
   font-size: 18px;
-  margin: auto;
 }
 
 /* ----------------------
@@ -37,35 +33,38 @@ h3 {
 }
 h2,
 p {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 p {
-  color: hsl(235, 45%, 61%);
+  color: hsl(236, 100%, 87%);
 }
 #hero-p {
   color: hsl(236, 100%, 87%);
 }
 #select {
   font-size: 20px;
-  color: hsl(236, 100%, 87%);
+  color: white;
+}
+.sub-text {
+  padding-bottom: 30px;
 }
 /* --------------------------
-!!!!!!!!! Colum !!!!!!!!!!!!
+!!!!!!!!! Column !!!!!!!!!!!!
 --------------------------- */
 
 .hero {
   grid-area: 1 / 1 / 3 / 2;
-  border: solid 1px black;
   border-radius: 15px;
   background-color: hsl(235, 46%, 20%);
 }
 
 #report {
-  padding: 20px 0px 190px 5px;
+  padding: 20px 100px 140px 5px;
   margin-bottom: 30px;
   background-color: hsl(264, 64%, 52%);
   border-radius: 15px;
 }
+
 #img-work,
 #work,
 #img-play,
@@ -118,7 +117,7 @@ p {
   margin-left: auto;
 }
 /* --------------------------
-!!!!!!!!! Fixes !!!!!!!!!!
+!!!!!!!!! content !!!!!!!!!!
 --------------------------- */
 
 .colum {
@@ -142,7 +141,6 @@ p {
 }
 
 #social {
-  position: relative;
   bottom: 55px;
 }
 /* --------------------------
@@ -153,6 +151,5 @@ p {
   border: solid 3px;
   border-radius: 47px;
   margin-bottom: 20px;
-  display: block;
   margin-left: 20px;
 }
